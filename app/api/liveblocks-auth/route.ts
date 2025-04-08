@@ -32,3 +32,5 @@ export async function POST(request: Request) {
 
   return new Response(body, { status });
 }
+
+export const revalidate = 0;
