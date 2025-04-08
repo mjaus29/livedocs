@@ -1,5 +1,5 @@
-import { liveblocks } from "@/lib/liveblocks";
-import { getUserColor } from "@/lib/utils";
+import { liveblocks } from "./../../../lib/liveblocks";
+import { getUserColor } from "./../../../lib/utils";
 import { currentUser } from "@clerk/nextjs/server";
 import { redirect } from "next/navigation";
 
