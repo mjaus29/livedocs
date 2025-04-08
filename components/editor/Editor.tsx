@@ -15,7 +15,7 @@ import {
   FloatingThreads,
   liveblocksConfig,
   LiveblocksPlugin,
-  useIsEditorReady,
+  useEditorStatus,
 } from "@liveblocks/react-lexical";
 import Loader from "../Loader";
 
@@ -39,7 +39,7 @@ export function Editor({
   roomId: string;
   currentUserType: UserType;
 }) {
-  const status = useIsEditorReady();
+  const status = useEditorStatus();
   const { threads } = useThreads();
 
   const initialConfig = liveblocksConfig({
@@ -62,7 +62,7 @@ export function Editor({
         </div>
 
         <div className="editor-wrapper flex flex-col items-center justify-start">
-          {!status ? (
+          {status === "not-loaded" || status === "loading" ? (
             <Loader />
           ) : (
             <div className="editor-inner min-h-[1100px] relative mb-5 h-fit w-full max-w-[800px] shadow-md lg:mb-10">
