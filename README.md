@@ -16,11 +16,9 @@
 
 Welcome to LiveDocs! An enhanced version of Google Docs that enables real-time collaboration with secure authentication, markdown editing, nested comments, live cursors, and instant notifications.
 
-Many tutorials promise real-time features but deliver frustrating experiences when developers try to implement them in real projects. I built LiveDocs to demonstrate how to implement truly collaborative features in a production-ready application.
+LiveDocs to demonstrate how to implement truly collaborative features in a production-ready application with real-time collaboration, secure authentication, complete document management, nested comments with tagging and reactions, and flexible sharing options.
 
 LiveDocs solves the complex challenges of collaborative document editing, including synchronization, permissions management, and real-time updates that are difficult to build from scratch.
-
-Real-time collaboration, secure authentication, complete document management, nested comments with tagging and reactions, and flexible sharing options.
 
 **Technologies Used:** Next.js, TypeScript, Tailwind CSS, Shadcn UI, Clerk, Sentry, and LiveBlocks.
 
